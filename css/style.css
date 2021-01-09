@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Yeon+Sung&display=swap');
+
 html{
     scroll-behavior: smooth;
+}
+body{
+    font-family: 'East Sea Dokdo', cursive;
+
+    font-family: 'Yeon Sung', cursive;
 }
 #header{
     background-image: url(../image/top_bg.png);
@@ -18,32 +25,33 @@ html{
 }
 .navbar li a{
     font-size: 13px;
-    color: #da2222;
     font-weight: normal;
     text-decoration: none;
     font-weight: bold;
     transition: all 500ms;
     display: inline-block;
-}
-.navbar li a:hover{
-    color: #FCB31E;
-    border-bottom: 2px dotted #da2222;
-    /* -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.57);
--moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.57);
-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.57);*/
 } 
 .menu_short_dics {
+    color: #da2222;
     display: block;
     font-size: 14px;
     text-align: center;
     font-weight: 300;
     text-transform: uppercase;
+    transition: all 0.5s ease;
 }
 .menu_name {
+    color: #da2222;
     display: block;
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
+}
+.navbar li a:hover .menu_short_dics{
+    color:  #FCB31E;
+}
+.navbar li a:hover .menu_name{
+    color:  #FCB31E;
 }
 #img_slider .container{
     max-width: 896px;
@@ -52,8 +60,8 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.57);*/
     border: 5px solid #2E96F2;
     border-radius: 16px;
     -webkit-box-shadow: 10px 15px 18px -5px rgba(0,0,0,0.57);
--moz-box-shadow: 10px 15px 18px -5px rgba(0,0,0,0.57);
-box-shadow: 10px 15px 18px -5px rgba(0,0,0,0.57);
+    -moz-box-shadow: 10px 15px 18px -5px rgba(0,0,0,0.57);
+    box-shadow: 10px 15px 18px -5px rgba(0,0,0,0.57);
 }
 .products .style{
     text-align: center;
@@ -61,6 +69,9 @@ box-shadow: 10px 15px 18px -5px rgba(0,0,0,0.57);
     margin: 30px 0;
     border-bottom: 5px dotted #2E96F2;
     text-transform: uppercase;
+}
+.tittle{
+    color: #da2222;
 }
 .img{
     transition: all 0.5s ease;
@@ -90,7 +101,6 @@ box-shadow: 10px 15px 18px -5px rgba(0,0,0,0.57);
     display: block;
     z-index: 999;
     color: white;
-    transition: all 0.6s ease;
 }
 .product_categoruy_title{
     padding: 0px 0;
@@ -103,18 +113,18 @@ box-shadow: 10px 15px 18px -5px rgba(0,0,0,0.57);
 }
 .copyright{
     color: #fff;
-font-size: 15px;
-font-weight: 500;
-text-align: center;
-text-transform: uppercase;
-margin-top: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 25px;
 }
 .footer{
     background: none repeat scroll 0 0 #2492d8;
-margin-top: -33px;
-padding-bottom: 22px;
-position: absolute;
-width: 100%;
+    margin-top: -33px;
+    padding-bottom: 22px;
+    position: absolute;
+    width: 100%;
 }
 .footer strong a{
     /* text-decoration: none; */
@@ -161,8 +171,87 @@ width: 100%;
 
 
 
+ /* team  */
+.back{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    border-radius: 25px;
+}
+
+.info{
+    font-size: 13px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #2492d8;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  background-color:  #2492d8;
+  color: white;
+  transform: rotateY(180deg);
+  position: relative;
+}
+.link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.link a{
+    text-decoration: none;
+}
+.link .faa i{
+    font-size: 30px;
+    color: white;
+    transition: all 0.5s ease;
+}
+.link a:hover i{
+    transform:translateY(-5px)
+}
 
 
+
+
+
+@media(max-width:769px){
+    .navbar li{
+        background: none;
+        background-color: #2E96F2;
+        border-radius: 32px 32px 32px 32px;
+        margin-bottom: 5px;
+    }
+    .team .product{
+        padding-bottom: 30px;
+    }
+}
 @media(max-width: 560px){
     #img_slider{
         padding: 20px 0px;
