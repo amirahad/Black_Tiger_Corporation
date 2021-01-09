@@ -236,6 +236,9 @@ body{
 .link a:hover i{
     transform:translateY(-5px)
 }
+.color{
+    color:  #2492d8;
+}
 
 
 
