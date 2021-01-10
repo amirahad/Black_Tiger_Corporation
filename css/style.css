@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
 html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'East Sea Dokdo', cursive;
-
-    font-family: 'Yeon Sung', cursive;
+   font-family: 'Roboto Condensed', sans-serif;
 }
 #header{
     background-image: url(../image/top_bg.png);
@@ -239,8 +237,29 @@ body{
 .color{
     color:  #2492d8;
 }
-
-
+#jeans img{
+    height: 500px;
+    width: 100%;
+}
+.img_style img{
+    width: 50px;
+    height: 70px;
+    margin-top: 20px;
+    align-content: center;
+}
+.name{
+    border-bottom: 1px solid rgb(156, 154, 154);
+}
+.name h4{
+    color: #2492d8;
+    text-transform: uppercase;
+}
+.line h5{
+    color:  #2492d8;
+}
+.block{
+    display: inline-block;
+}
 
 
 
