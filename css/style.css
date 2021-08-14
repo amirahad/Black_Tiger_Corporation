@@ -5,7 +5,7 @@ html{
 }
 body{
    font-family: 'Roboto Condensed', sans-serif;
-}
+} 
 #header{
     background-image: url(../image/top_bg.png);
     height: 200px;
@@ -50,7 +50,7 @@ body{
 }
 .navbar li a:hover .menu_name{
     color:  #FCB31E;
-}
+} 
 #img_slider .container{
     max-width: 896px;
     height: auto;
@@ -93,6 +93,10 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+}
+.view_details a{
+    text-decoration: none;
+    color: #fff;
 }
 .img:hover .view_details{
     background: rgba(5, 82, 247, 0.5);
@@ -269,6 +273,7 @@ body{
         background-color: #2E96F2;
         border-radius: 32px 32px 32px 32px;
         margin-bottom: 5px;
+        text-align: center;
     }
     .team .product{
         padding-bottom: 30px;
